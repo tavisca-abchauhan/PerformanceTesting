@@ -1,0 +1,69 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+BuildScript: C:\Users\abchauhan\source\repos\Performance\Performance\bin\Release\c8f76f62-b718-4b49-9844-08374ecd5d55.bat
+// ***** Done, took 00:00:06 (6.51 sec)   *****
+// Found 2 benchmarks:
+//   ForVsForEach.For: DefaultJob
+//   ForVsForEach.ForEach: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)// Build Error: The build has failed!
+CS1729: 'ForVsForEach' does not contain a constructor that takes 0 arguments
+CS1729: 'ForVsForEach' does not contain a constructor that takes 0 arguments
+
+
+// Build Error: The build has failed!
+CS1729: 'ForVsForEach' does not contain a constructor that takes 0 arguments
+CS1729: 'ForVsForEach' does not contain a constructor that takes 0 arguments
+
+
+Successfully reverted power plan (GUID: 381b4222-f694-41f0-9685-ff5bb260df2e FriendlyName: Balanced)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\Performance.ForVsForEach-report.csv
+  BenchmarkDotNet.Artifacts\results\Performance.ForVsForEach-report-github.md
+  BenchmarkDotNet.Artifacts\results\Performance.ForVsForEach-report.html
+
+// * Detailed results *
+ForVsForEach.For: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+ForVsForEach.ForEach: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.11.5, OS=Windows 10.0.17134.829 (1803/April2018Update/Redstone4)
+Intel Core i7-4600U CPU 2.10GHz (Haswell), 1 CPU, 4 logical and 2 physical cores
+Frequency=2630629 Hz, Resolution=380.1372 ns, Timer=TSC
+  [Host] : .NET Framework 4.7.2 (CLR 4.0.30319.42000), 32bit LegacyJIT-v4.7.3416.0  [AttachedDebugger]
+
+
+|  Method | Mean | Error |
+|-------- |-----:|------:|
+|     For |   NA |    NA |
+| ForEach |   NA |    NA |
+
+Benchmarks with issues:
+  ForVsForEach.For: DefaultJob
+  ForVsForEach.ForEach: DefaultJob
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+
+// * Legends *
+  Mean  : Arithmetic mean of all measurements
+  Error : Half of 99.9% confidence interval
+  1 ns  : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:02 (2.37 sec), executed benchmarks: 0
+
+Global total time: 00:00:08 (8.9 sec), executed benchmarks: 0
+// * Artifacts cleanup *
